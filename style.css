@@ -320,7 +320,10 @@ div{
     width: 70%;
     text-align: center;
     overflow: hidden;
-    z-index: -1;
+    width: 70%;
+    margin: 0 auto;
+    opacity: 0.5;
+
 }
 
 svg{
@@ -328,3 +331,19 @@ svg{
     height: 100%;
 
 }
+
+.line{
+    fill: none;
+    stroke: #7d2d68;
+    stroke-width: 17px;
+
+/* Stroke-dasharray property */
+    stroke-dasharray: 3353px;
+    stroke-dashoffset: 3353px;
+    animation: move 15s linear infinite;     
+}
+
+@keyframes move {
+    100% {
+        stroke-dashoffset: 0;
+    }
